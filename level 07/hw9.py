@@ -3,7 +3,6 @@ me = 16
 sister = 8
 mom = 38
 dad = 42
-print(me + sister + mom + dad)
+print((me + sister + mom + dad) /4)
 
-print(104 / 4 )
 # ჯერ შევაჯამე ყველას ასაკი, შემდეგ გავყავი რაოდენობაზე
