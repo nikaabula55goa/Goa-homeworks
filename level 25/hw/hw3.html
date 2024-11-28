@@ -1,0 +1,128 @@
+<!--3) გაუკეთეთ მომხმარებელს პატარა გამოკითხვა გამოიყენეთ ყველა შესაძლო ტიპის ინფუთი შეგიძლიათ ექსპერიმენტები თქვენითაც ჩაატაროთ  -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გამოკითხვა</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form select, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        form fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        form legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit-survey" method="POST">
+        <h2>მომხმარებლის გამოკითხვა</h2>
+
+        <!-- სახელი -->
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" placeholder="შეიყვანეთ თქვენი სახელი" required>
+
+        <!-- ასაკი -->
+        <label for="age">ასაკი:</label>
+        <input type="number" id="age" name="age" placeholder="შეიყვანეთ თქვენი ასაკი" min="18" max="100" required>
+
+        <!-- სქესი -->
+        <fieldset>
+            <legend>გენდერი</legend>
+            <label for="male">მამრობითი</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">მდედრობითი</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">სხვა</label>
+            <input type="radio" id="other" name="gender" value="other">
+        </fieldset>
+
+        <!-- ჰობი -->
+        <fieldset>
+            <legend>თქვენი ჰობი</legend>
+            <label for="reading">კითხვის კითხვა</label>
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="sports">სპორტი</label>
+            <input type="checkbox" id="sports" name="hobby" value="sports">
+            <label for="music">მუსიკა</label>
+            <input type="checkbox" id="music" name="hobby" value="music">
+            <label for="traveling">მოგზაურობა</label>
+            <input type="checkbox" id="traveling" name="hobby" value="traveling">
+        </fieldset>
+
+        <!-- შეფასება -->
+        <label for="rating">შეფასება:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5" step="1" value="3">
+        <p>შეფასება: <span id="rangeValue">3</span></p>
+
+        <!-- კომენტარი -->
+        <label for="comments">კომენტარი:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="გთხოვთ, დატოვოთ კომენტარი"></textarea>
+
+        <!-- მენიუ -->
+        <label for="country">თქვენი ქვეყანა:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>აირჩიეთ ქვეყანა</option>
+            <option value="georgia">საქართველო</option>
+            <option value="usa">აშშ</option>
+            <option value="uk">დიდი ბრიტანეთი</option>
+            <option value="germany">გერმანია</option>
+            <option value="france">ფრანგეთი</option>
+        </select>
+
+        <!-- ელექტრონული ფოსტა -->
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+        <!-- ღილაკი -->
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+    <script>
+        // Range input-ის value-ის ჩვენება
+        const rangeInput = document.getElementById("rating");
+        const rangeValue = document.getElementById("rangeValue");
+
+        rangeInput.addEventListener("input", function() {
+            rangeValue.textContent = rangeInput.value;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!--2) შექმენით drop-down მენიუ age group ებისთვის როგორებიცაა under 18 , 18-30 , 31-50 , over 50 -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ასაკობრივი ჯგუფის არჩევა</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit-age-group" method="POST">
+        <label for="age-group">აირჩიეთ ასაკობრივი ჯგუფი:</label>
+        <select id="age-group" name="age-group" required>
+            <option value="" disabled selected>აირჩიეთ</option>
+            <option value="under-18">Under 18</option>
+            <option value="18-30">18-30</option>
+            <option value="31-50">31-50</option>
+            <option value="over-50">Over 50</option>
+        </select>
+
+        <button type="submit">დადასტურება</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!--1) შექმენით სარეგისტრაციო ფორმა სადაც მოხმამრებელმა უნდა შეიყვანოს სახელი, გვარი, მეილი, პაროლი გიმეოროს პაროლი დამატეთ submit ღილაკი, თითოეულ ინფუთს უნდა ქონდეს შესაბამისი ატრიბუტები გამოიყენეთ placeholder, name, value ატრიბუტები type თავისთავად -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სარეგისტრაციო ფორმა</title>
+</head>
+<body>
+    <h2>სარეგისტრაციო ფორმა</h2>
+    <form action="/submit_registration" method="POST">
+        <!-- სახელი -->
+        <label for="firstname">სახელი:</label>
+        <input 
+            type="text" 
+            id="firstname" 
+            name="firstname" 
+            placeholder="შეიყვანეთ თქვენი სახელი" 
+            value="" 
+            required>
+        <br><br>
+
+        <!-- გვარი -->
+        <label for="lastname">გვარი:</label>
+        <input 
+            type="text" 
+            id="lastname" 
+            name="lastname" 
+            placeholder="შეიყვანეთ თქვენი გვარი" 
+            value="" 
+            required>
+        <br><br>
+
+        <!-- მეილი -->
+        <label for="email">მეილი:</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="შეიყვანეთ თქვენი ელ.ფოსტა" 
+            value="" 
+            required>
+        <br><br>
+
+        <!-- პაროლი -->
+        <label for="password">პაროლი:</label>
+        <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="შეიყვანეთ პაროლი" 
+            required>
+        <br><br>
+
+        <!-- პაროლის გამეორება -->
+        <label for="confirm_password">გაიმეორეთ პაროლი:</label>
+        <input 
+            type="password" 
+            id="confirm_password" 
+            name="confirm_password" 
+            placeholder="გაიმეორეთ პაროლი" 
+            required>
+        <br><br>
+
+        <!-- Submit ღილაკი -->
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+</body>
+</html>

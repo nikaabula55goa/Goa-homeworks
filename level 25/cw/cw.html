@@ -1,0 +1,80 @@
+#     1) შექმენით სარეგისტრაციო ფორმა სადაც მომხმარებელმა უნდა შეიყვანოს სახელი გვარი, ემაილი, პაროლი, გაიმეოროს პაროლი, ტელეფონის ნომერი და გენდერი, გამოიყენეთ label ები და დააკავშირეთ ისინი სწორად input ებს, ასევე გამოიყენეთ ის ინფუთის ატრიბუტები რაც აქამდე ვისწავლეთ 
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სარეგისტრაციო ფორმა</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <h2>სარეგისტრაციო ფორმა</h2>
+        
+        <label for="firstname">სახელი:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="შეიყვანეთ თქვენი სახელი" required maxlength="50">
+        
+        <label for="lastname">გვარი:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="შეიყვანეთ თქვენი გვარი" required maxlength="50">
+
+        <label for="email">ელფოსტა:</label>
+        <input type="email" id="email" name="email" placeholder="შეიყვანეთ თქვენი ელფოსტა" required>
+
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" placeholder="შეიყვანეთ პაროლი" required minlength="8">
+        
+        <label for="confirm-password">გაიმეორეთ პაროლი:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="გაიმეორეთ პაროლი" required>
+
+        <label for="phone">ტელეფონის ნომერი:</label>
+        <input type="tel" id="phone" name="phone" placeholder="555-123-456" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+
+        <label for="gender">გენდერი:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>აირჩიეთ გენდერი</option>
+            <option value="male">მამრობითი</option>
+            <option value="female">მდედრობითი</option>
+            <option value="other">სხვა</option>
+        </select>
+
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+</body>
+</html>
