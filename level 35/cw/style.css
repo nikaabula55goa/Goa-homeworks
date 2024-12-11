@@ -1,0 +1,25 @@
+        /* ვქმნით შავი ფონის ფონდის სტილს */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* პარაგრაფების სტილი */
+        p {
+            font-size: 20px;
+            color: #FF6347; /* თითოეული პარაგრაფი წითელი ფერის */
+            background-color: #2F4F4F; /* მუქი ფონი */
+            padding: 10px;
+            margin: 20px;
+        }
+
+        /* h2 წერის სტილი */
+        h2 {
+            font-size: 36px;
+            color: #32CD32; /* მწვანე ფერი */
+            background-color: #8B0000; /* მუქი წითელი ფონი */
+            padding: 15px;
+            margin: 20px;
+        }

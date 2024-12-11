@@ -1,0 +1,15 @@
+/* სტილი id-ის გამოყენებით */
+#title-one {
+    color: red;                /* წითელი ფერი */
+    text-align: center;        /* ტექსტის განთავსება ცენტრში */
+    font-size: 40px;           /* შრიფტის ზომა */
+    font-family: Arial, sans-serif;
+}
+
+/* სტილი class-ის გამოყენებით */
+.title-two {
+    color: blue;               /* ლურჯი ფერი */
+    text-align: right;         /* ტექსტის განთავსება მარჯვნივ */
+    font-size: 30px;           /* შრიფტის ზომა */
+    font-family: 'Courier New', monospace;
+}

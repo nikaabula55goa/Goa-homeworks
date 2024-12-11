@@ -1,0 +1,18 @@
+/* Body background color */
+body {
+    background-color: black; /* Setting black background for the page */
+    color: white; /* Setting the default text color to white */
+    font-family: Arial, sans-serif; /* Adding a font for better appearance */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100vh; /* Make sure the content is centered in the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* h1 text styling */
+h1 {
+    font-size: 48px; /* Increased font size */
+    color: greenyellow; /* Greenyellow text color */
+    text-align: center; /* Ensures text is aligned to center */
+}
