@@ -1,0 +1,16 @@
+
+.overline{
+    text-decoration: overline red;
+    color: aqua;
+    font-size: 90px;
+}
+.underline{
+    text-decoration: underline blueviolet;
+    color: brown;
+    font-size: 90px;
+}
+.line-trough{
+    text-decoration: line-through chartreuse;
+    color: darkblue;
+    font-size: 90px;
+}

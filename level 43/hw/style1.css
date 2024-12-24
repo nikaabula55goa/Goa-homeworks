@@ -1,0 +1,17 @@
+.n1{
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: url('icon.png');
+}
+.n2{
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+.n3{
+    list-style-position: outside;
+    list-style-type: none;
+}
+.n4{
+    list-style-type: disc;
+}

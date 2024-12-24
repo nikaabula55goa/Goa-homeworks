@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.dotted-top-bottom {
+    color: black;
+    border-top: 2px dotted red;
+    border-bottom: 2px dotted red;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+}

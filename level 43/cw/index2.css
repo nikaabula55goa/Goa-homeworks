@@ -1,0 +1,71 @@
+body {
+    background-color: #f4f4f9;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.n1 {
+    background: #ffffff;
+    padding: 20px;
+    width: 300px;
+}
+
+.n1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.n1 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.text-input {
+    border: 2px solid yellowgreen;
+    background-color: tan;
+    color:gold;
+}
+
+.text-input{
+    border-color: yellow;
+}
+
+
+.password-input {
+    border: 2px solid teal;
+    background-color:floralwhite;
+    color: floralwhite;
+}
+
+.password-input{
+    border-color: violet;
+}
+
+
+.email-input {
+    border: 2px solid coral;
+    background-color: cornsilk;
+    color: chocolate;
+}
+
+.email-input{
+    border-color: chocolate;
+}
+
+
+.n1 button {
+    background-color: #673ab7;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+

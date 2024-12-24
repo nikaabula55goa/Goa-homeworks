@@ -1,0 +1,47 @@
+header{text-align: center;
+    height: fit-content;
+    background-color: aqua;}
+    
+    ul{list-style-position: inside;}
+    
+    .divv{display: flex;
+    align-items: center;
+    gap: 8%;
+    }
+    
+    .box{ 
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2{ 
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    
+    .img{ 
+        display: flex;
+        gap: 10%;
+        height: 300px;
+    }
+    
+    h1{text-align: center;}
+    
+    .imgg{
+        display: flex;
+        gap: 10%;
+        height: 300px;
+    }
+    
+    .sushi{ 
+        display: flex;
+        gap: 10%;
+        height: 300px;
+    }
+    
+    .drift{ 
+    display: flex;
+    text-align: center;
+    }

@@ -1,0 +1,22 @@
+/* Style for unvisited links */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Style for visited links */
+a:visited {
+    color: purple;
+}
+
+/* Style for hover effect */
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Style for active effect */
+a:active {
+    background-color: darkgray;
+    font-size: 18px;
+}

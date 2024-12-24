@@ -1,0 +1,17 @@
+.parent-large {
+    font-size: 500px; /* ტექსტის ზომა მშობელ დივს */
+    height: 500px; /* სიმაღლის განსაზღვრა ვიზუალური წონასწორობისთვის */
+    background-color: lightgray;
+}
+
+.child-small {
+    font-size: 25%; /* მშობელი დივის ზომიდან გამომდინარე 125px */
+    width: 125px;
+    height: 125px;
+    background-color: lightblue;
+}
+
+.paragraph {
+    font-size: 50%; /* მშობელი დივის ტექსტის ზომის 50% */
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+.parent {
+    width: 70%;
+    height: 300px; /* სიმაღლე მშობელ დივს */
+    background-color: black;
+    color: white; /* ტექსტის ფერი რომ გამოჩნდეს */
+    font-size: 20px; /* ტექსტის ზომა */
+}
+
+.child {
+    width: 50%;
+    height: 150px;
+    background-color: blue;
+}
+
+.paragraph {
+    width: 50%;
+    font-size: 50%; /* მშობლის ტექსტის ზომის 50% */
+    color: beige;
+}
+
+.fixed-div {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
