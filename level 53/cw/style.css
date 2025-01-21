@@ -1,0 +1,14 @@
+.interactive-div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: background-color 2s ease, transform 4s ease-in-out; /* ფერის შეცვლა, ტრიალი და ზომის ზრდის ტრანზიცია */
+    transform-origin: center;
+    display: inline-block;
+}
+
+.interactive-div:hover {
+    transform: rotate(2880deg) scale(1.5); /* ტრიალი და ზომაში გაზრდა */
+    background-color: red; /* ფერის შეცვლა */
+    transition: background-color 2s ease, transform 2s ease-in-out 2s; /* განსხვავებული დრო და დაყოვნება */
+}

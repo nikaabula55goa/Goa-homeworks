@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.color-change {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: colorAnimation 3s infinite;
+}
+
+@keyframes colorAnimation {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: purple;
+    }
+    100% {
+        color: orange;
+    }
+}

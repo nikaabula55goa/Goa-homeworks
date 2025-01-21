@@ -1,0 +1,7 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative; 
+    transform: translate(50px, 100px); /* გადააქვს 50px მარჯვნივ და 100px ქვევით */
+}
