@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+}
+
+.title {
+    color: #26B9B3;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.guarantee {
+    color: #C4D600;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #A0A0A0;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.pricing-container {
+    display: flex;
+    background: #26B9B3;
+    color: white;
+}
+
+.pricing-box {
+    padding: 40px;
+    flex: 1;
+}
+
+.pricing-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.price span {
+    font-size: 16px;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.price-description {
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.signup-btn {
+    background: #C4D600;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+    background: #b1c100;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.features-list li {
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .header {
+        padding: 30px 20px;
+    }
+
+    .pricing-box {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .guarantee {
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 20px;
+        border-radius: 15px;
+    }
+}

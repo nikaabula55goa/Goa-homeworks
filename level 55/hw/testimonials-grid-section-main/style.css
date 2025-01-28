@@ -1,0 +1,74 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.card.quote {
+    grid-column: span 2;
+    background: #6a1b9a;
+    color: #fff;
+}
+
+.quote h3, .quote p {
+    color: #fff;
+}
+
+.quote::before {
+    content: '\201C';
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.card.dark {
+    background: #2d2d2d;
+    color: #fff;
+}
+
+.dark h3, .dark p {
+    color: #fff;
+}

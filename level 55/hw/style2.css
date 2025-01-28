@@ -1,0 +1,124 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.background {
+    background-color: #d6e7ff;
+    width: 100%;
+    max-width: 1440px;
+    padding: 50px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-header img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h1 {
+    font-size: 1.5rem;
+    color: #1e2a39;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #6c7a89;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f9ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.plan img {
+    width: 40px;
+    height: 40px;
+}
+
+.plan-details {
+    text-align: left;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.plan-details h2 {
+    font-size: 1rem;
+    color: #1e2a39;
+}
+
+.plan-details p {
+    font-size: 0.85rem;
+    color: #6c7a89;
+}
+
+.plan a {
+    font-size: 0.85rem;
+    color: #4661e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: #4661e6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #3b54cc;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #6c7a89;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+}
