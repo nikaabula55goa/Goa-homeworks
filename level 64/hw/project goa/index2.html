@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="logo">
+        <span>GOUR</span>MAN
+    </div>
+   <div class="button2">
+    <a href="index1.html"><BUtton> BACK</BUtton></a> 
+   </div>
+    <div class="container">
+        <h1>შექმენი ანგარიში</h1>
+        <p class="login-link">
+            უკვე გაქვთ ანგარიში? <a href="#">შესვლა</a>
+        </p>
+
+        <form>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="firstName">სახელი</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">გვარი</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">ელ-ფოსტა</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">პაროლი</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">გაიმეორეთ პაროლი</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                    ვეთანხმები <a href="#" style="color: #22c55e;">წესებსა და პირობებს</a>
+                </label>
+            </div>
+
+            <button type="submit">რეგისტრაცია</button>
+
+            <div class="divider">
+                <span>ან გააგრძელეთ</span>
+            </div>
+
+            <div class="social-buttons">
+                <button type="button" class="social-button">Google</button>
+                <button type="button" class="social-button">Facebook</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
