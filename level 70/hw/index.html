@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Mustang 2021 | The Future of Exhilaration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://www.ford.com/favicon.ico" alt="Ford Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SUVS</a></li>
+                    <li><a href="#">TRUCKS</a></li>
+                    <li><a href="#">ELECTRIFIED</a></li>
+                    <li><a href="#">ALL VEHICLES</a></li>
+                </ul>
+            </nav>
+            <div class="auth-links">
+                <a href="#" class="sign-in">Sign in</a>
+                <a href="#" class="sign-up">Sign up</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>THE FUTURE OF <span>EXHILARATION</span></h1>
+                <h2>FORD MUSTANG 2021</h2>
+                <div class="cta-buttons">
+                    <a href="#" class="btn primary-btn">Build & Price</a>
+                    <a href="#" class="btn video-btn"><i class="fas fa-play"></i> Watch Video</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Hero image is set as background in CSS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-order">
+        <div class="container">
+            <h2>Custom Order Your Mustang</h2>
+            <p class="section-description">Get the vehicle you want with an online custom order.</p>
+            
+            <div class="order-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Build & Price Your Vehicle</h3>
+                    <p>Choose model, trim & options to create your custom order.</p>
+                    <a href="#" class="learn-more">Learn more &gt;</a>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Share With Your Dealer</h3>
+                    <p>When you're finished building, submit your vehicle to your local dealer.</p>
+                    <a href="#" class="learn-more">Learn more &gt;</a>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Place Your Order</h3>
+                    <p>Your dealer will contact you. Answer the questions before placing your order.</p>
+                    <a href="#" class="learn-more">Learn more &gt;</a>
+                </div>
+            </div>
+            
+            <div class="custom-order-cta">
+                <a href="#" class="btn primary-btn">Create Your Custom Order</a>
+                <p><a href="#" class="custom-order-explained">Custom Order Explained</a></p>
+            </div>
+            
+            <div class="vehicle-highlights">
+                <div class="highlight">
+                    <h4>Starting At</h4>
+                    <p class="price">$27,205</p>
+                </div>
+                <div class="highlight">
+                    <h4>EPA-Est. MPG City/Hwy</h4>
+                    <p>21/30</p>
+                </div>
+                <div class="highlight">
+                    <h4>Seating For</h4>
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="power-section">
+        <div class="container">
+            <h2>POWER DOES MATTER</h2>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
